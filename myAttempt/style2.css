@@ -33,6 +33,7 @@ h1 {
 }
 
 #did-you-pass {
+    margin-top: 10px;
     width: 700px;
     height: auto;
     font-size: 30px;
@@ -50,6 +51,7 @@ textarea {
 }
 
 .hobbits {
+    margin-top: 20px;
     width: 350px;
     font-size: 25px;
     font-weight: bolder;
@@ -61,7 +63,7 @@ textarea {
 }
 
 .hobbits:hover {
-   
+   cursor: pointer;
     
 }
 
