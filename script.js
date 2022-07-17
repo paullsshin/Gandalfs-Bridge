@@ -23,7 +23,6 @@ function generatePassword() {
 
   storeNumbers = confirm(("Would you like to have numbers in your password? "));
 
-
   makeSpecial = confirm(("Would you like to have special characters in your password? "));
  
 // if no options are chosen then a message will pop up saying to choose at least one option
