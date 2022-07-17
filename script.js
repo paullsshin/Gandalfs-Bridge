@@ -15,37 +15,17 @@ function generatePassword() {
     return prompt("Please enter a valid number between 8 and 128.");
   } else if (isNaN(characterLength)) {
     characterLength = prompt("Please enter a number digit. ");
-  } else {
-    alert("Your password is going to be " + characterLength + " characters long.");
-  }
+  } 
 
   lowerCase = confirm(("Would you like to have little letters in your password? "));
-  if (lowerCase) {
-    alert("You will have little letters.");
-  } else {
-    alert("Your password will not have little letters.");
-  }
 
-  upperCase = confirm(("Would you like to have big letters in your password? "));
-  if (upperCase) {
-    alert("You will have big letters. ");
-  } else {
-    alert("Your password will not have big letters. ");
-  }
+  upperCase = confirm(("Would you like to have big letters in your password? ")); 
 
   storeNumbers = confirm(("Would you like to have numbers in your password? "));
-  if (storeNumbers) {
-    alert("Your password will have numbers. ");
-  } else {
-    alert("Your password will not have numbers. ");
-  }
+
 
   makeSpecial = confirm(("Would you like to have special characters in your password? "));
-  if(makeSpecial) {
-    alert("Your password will have special characters. ");
-  } else {
-    alert("Your password will not have special characters.");
-  }
+ 
 // if no options are chosen then a message will pop up saying to choose at least one option
   if (lowerCase === false && upperCase === false && storeNumbers === false && makeSpecial === false) {
     return confirm("Please select at least one option for your password.");
